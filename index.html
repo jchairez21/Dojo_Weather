@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <h1>DojoWeather</h1>
+        <ul>
+            <li class="one" onclick="alert('hello')">Burbank</li>
+            <li class="one" onclick="alert('hello')">Chicago</li>
+            <li class="one" onclick="alert('hello')">Dallas</li>
+        </ul>
+    </div>
+    <div class="header">
+        <h2>San Jose</h2>
+        <p>show temperature in
+            <select name="temp" id="temp">
+                <option value="celsius">℃</option>
+                <option value="fahrenheit">℉</option>
+            </select>
+        </p>
+    </div>
+    <div class="border"></div>
+    <div class="container">
+        <div class="col1">
+            <h3>Today</h3>
+            <img src="img/some_rain.png" alt="rainy">
+            <p class="sub_font">some rain</p>
+            <div class="temp_line">
+                <p class="temp_num1">24०</p>
+                <span class="temp_num2">18 </span>
+            </div>
+        </div>
+        <div class="col2">
+            <h3>Tomorrow</h3>
+            <img src="img/some_sun.png" alt="sunny">
+            <p class="sub_font">some sun</p>
+            <div class="temp_line">
+                <p class="temp_num1">27०</p>
+                <span class="temp_num2">19० </span>
+            </div>
+        </div>
+        <div class="col3">
+            <h3>Friday</h3>
+            <img src="img/some_clouds.png" alt="cloudy">
+            <p class="sub_font">some clouds</p>
+            <div class="temp_line">
+                <p class="temp_num1">21०</p>
+                <span class="temp_num2">16० </span>
+            </div>
+        </div>
+        <div class="col4">
+            <h3>Saturday</h3>
+            <img src="img/some_sun.png" alt="sunny">
+            <p class="sub_font">some sun</p>
+            <div class="temp_line">
+                <p class="temp_num1">26०</p>
+                <span class="temp_num2">21० </span>
+            </div>
+        </div>
+    </div>
+    <div class="sub_container">
+        <div class="cookie_positioning">
+            <div class="cookie_img">
+                <img src="img/cookie.png" alt="cookie">
+            </div>
+            <div class="cookie_info">
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize</p>
+                <p>content and ads, to provide social media features and to</p>
+                <p>analyse our traffic.<a href="#" class="read_link"> Read more...</a></p>
+            </div>
+            <span class="btn">I Accept</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
