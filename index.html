@@ -15,16 +15,17 @@
 <body>
     <div class="nav">
         <h1>DojoWeather</h1>
+        <input type="text" placeholder="Search for anything" name="search">
         <ul>
-            <li class="one" onclick="alert('hello')">Burbank</li>
-            <li class="one" onclick="alert('hello')">Chicago</li>
-            <li class="one" onclick="alert('hello')">Dallas</li>
+            <li class="one" onclick="loading()"<a hre="#">Burbank</a></li>
+            <li class="one" onclick="loading()"<a hre="#">Chicago</a></li>
+            <li class="one" onclick="loading()"<a hre="#">Dallas</a></li>
         </ul>
     </div>
     <div class="header">
         <h2>San Jose</h2>
         <p>show temperature in
-            <select name="temp" id="temp">
+            <select name="temp" id="temp" onchange="convert(this)">
                 <option value="celsius">℃</option>
                 <option value="fahrenheit">℉</option>
             </select>
@@ -32,13 +33,13 @@
     </div>
     <div class="border"></div>
     <div class="container">
-        <div class="col1">
+        <div class="col1" onmouseover="over(this)" onmouseout="out(this)">
             <h3>Today</h3>
             <img src="img/some_rain.png" alt="rainy">
             <p class="sub_font">some rain</p>
             <div class="temp_line">
-                <p class="temp_num1">24०</p>
-                <span class="temp_num2">18 </span>
+                <p class="temp_num1">24</p>
+                <span class="temp_num2">18</span>
             </div>
         </div>
         <div class="col2">
@@ -46,8 +47,8 @@
             <img src="img/some_sun.png" alt="sunny">
             <p class="sub_font">some sun</p>
             <div class="temp_line">
-                <p class="temp_num1">27०</p>
-                <span class="temp_num2">19० </span>
+                <p class="temp_num1">27</p>
+                <span class="temp_num2">19</span>
             </div>
         </div>
         <div class="col3">
@@ -55,8 +56,8 @@
             <img src="img/some_clouds.png" alt="cloudy">
             <p class="sub_font">some clouds</p>
             <div class="temp_line">
-                <p class="temp_num1">21०</p>
-                <span class="temp_num2">16० </span>
+                <p class="temp_num1">21</p>
+                <span class="temp_num2">16</span>
             </div>
         </div>
         <div class="col4">
@@ -64,12 +65,12 @@
             <img src="img/some_sun.png" alt="sunny">
             <p class="sub_font">some sun</p>
             <div class="temp_line">
-                <p class="temp_num1">26०</p>
-                <span class="temp_num2">21० </span>
+                <p class="temp_num1">26</p>
+                <span class="temp_num2">21</span>
             </div>
         </div>
     </div>
-    <div class="sub_container">
+    <div class="sub_container" onclick="hide()">
         <div class="cookie_positioning">
             <div class="cookie_img">
                 <img src="img/cookie.png" alt="cookie">
@@ -80,7 +81,7 @@
                 <p>content and ads, to provide social media features and to</p>
                 <p>analyse our traffic.<a href="#" class="read_link"> Read more...</a></p>
             </div>
-            <span class="btn">I Accept</span>
+            <span class="btn" onclick="accept()">I Accept</span>
         </div>
     </div>
     <script src="script.js"></script>
